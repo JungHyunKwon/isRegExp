@@ -5,7 +5,7 @@
 (function() {
 	'use strict';
 
-	var _toString = Object.prototype.toString;
+	var toStr = Object.prototype.toString;
 
 	/**
 	 * @name isRegExp
@@ -14,6 +14,6 @@
 	 * @return {boolean}
 	 */
 	window.isRegExp = function(value) {
-		return _toString.call(value) === '[object RegExp]';
+		return toStr.call(value) === '[object RegExp]';
 	};
 })();
